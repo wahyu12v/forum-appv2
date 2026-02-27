@@ -10,7 +10,7 @@ module.exports = defineConfig({
     defaultCommandTimeout: 10000,
     env: {
       USER_EMAIL: 'ardian.wahyusaputra17@gmail.com',
-      USER_PASSWORD: 'pekanbaru12345',
+      USER_PASSWORD: 'pekanbaru123zx',
     },
   },
 });
