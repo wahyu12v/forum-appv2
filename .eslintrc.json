@@ -1,0 +1,50 @@
+{
+  "extends": ["airbnb"],
+  "plugins": ["react", "react-hooks"],
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "warn",
+    "react/jsx-filename-extension": ["warn", { "extensions": [".jsx", ".js"] }],
+    "import/prefer-default-export": "off",
+    "no-param-reassign": [
+      "error",
+      { "props": true, "ignorePropertyModificationsFor": ["state"] }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-one-expression-per-line": ["error", { "allow": "single-child" }],
+    "object-curly-newline": ["error", { "consistent": true }],
+    "react/no-danger": "warn",
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "assert": "htmlFor"
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.js",
+          "**/*.test.jsx",
+          "**/*.spec.js",
+          "**/*.spec.jsx",
+          "**/setupTests.js",
+          "cypress/**/*"
+        ]
+      }
+    ]
+  }
+}

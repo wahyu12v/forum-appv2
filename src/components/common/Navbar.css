@@ -1,0 +1,123 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(10, 10, 20, 0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.navbar__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.navbar__brand-icon {
+  font-size: 1.5rem;
+  color: #6366f1;
+}
+
+.navbar__brand-text {
+  font-family: 'Clash Display', 'Syne', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #6366f1, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.navbar__link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+  letter-spacing: 0.02em;
+}
+
+.navbar__link:hover {
+  color: #fff;
+}
+
+.navbar__actions {
+  margin-left: auto;
+}
+
+.navbar__user {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.navbar__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #6366f1;
+  object-fit: cover;
+}
+
+.navbar__username {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.navbar__auth {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.navbar__btn {
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  transition: all 0.2s;
+  display: inline-block;
+}
+
+.navbar__btn--outline {
+  background: transparent;
+  border: 1px solid rgba(99, 102, 241, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar__btn--outline:hover {
+  border-color: #6366f1;
+  color: #fff;
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.navbar__btn--primary {
+  background: #6366f1;
+  color: #fff;
+}
+
+.navbar__btn--primary:hover {
+  background: #4f46e5;
+  transform: translateY(-1px);
+}
