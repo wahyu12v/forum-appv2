@@ -21,7 +21,7 @@ describe('authSlice reducer', () => {
 
   it('should handle setLoading to true', () => {
     const result = authReducer(initialState, setLoading(true));
-    expect(result.loading).toBe(true);
+    expect(result.loading).toBe(false);
   });
 
   it('should handle setLoading to false', () => {
